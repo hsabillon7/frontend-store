@@ -1,0 +1,55 @@
+:root {
+  --font: "Staatliches", cursiva;
+  /* Paleta de colores */
+  --texto: #000000;
+  --primary: #e5bace;
+  --secondary: #eb3a70;
+  --secondaryDarker: #ef0d50;
+  --background: #e1f2f7;
+  --backgroundDarker: #a4e5f9;
+}
+html {
+  box-sizing: border-box;
+  /* Tamaño base para la fuente 10px */
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--background);
+  font-size: 2rem;
+  line-height: 2;
+}
+body.footer-bottom {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--font);
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-size: 1.8rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--texto);
+}
+.header {
+  display: grid;
+  justify-content: center;
+  padding: 3rem 0;
+}
+nav {
+  background-color: var(--backgroundDarker);
+  padding: 1rem 0;
+}
+nav .navbar {
+  display: grid;
+}
