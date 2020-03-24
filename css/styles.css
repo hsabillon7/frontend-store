@@ -1,7 +1,8 @@
 :root {
   --font: "Staatliches", cursiva;
   /* Paleta de colores */
-  --texto: #000000;
+  --text: #000000;
+  --title: #ffffff;
   --primary: #e5bace;
   --secondary: #eb3a70;
   --secondaryDarker: #ef0d50;
@@ -39,17 +40,69 @@ img {
 p {
   font-size: 1.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--texto);
+  color: var(--text);
 }
 .header {
   display: grid;
   justify-content: center;
   padding: 3rem 0;
 }
-nav {
+.navbar {
   background-color: var(--backgroundDarker);
   padding: 1rem 0;
 }
-nav .navbar {
+.nav {
   display: grid;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .nav {
+    /* Repite los valores que se le pasan como argumento.
+       El segundo argumento puede ser porcentual, pixeles o fracción (una
+       fracción del espacio disponible).    
+    */
+    grid-template-columns: repeat(2, 25%);
+  }
+}
+.nav a {
+  font-family: var(--font);
+  font-size: 3rem;
+  text-align: center;
+  color: var(--title);
+  text-decoration: none;
+}
+.nav a:hover {
+  color: var(--secondary);
+}
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.product {
+  background-color: var(--backgroundDarker);
+  padding: 1rem;
+}
+.product-description p {
+  font-family: var(--font);
+  color: var(--text);
+  text-align: center;
+  line-height: 1.2;
+}
+.product-description .title {
+  font-size: 3rem;
+}
+.product-description .price {
+  color: var(--secondary);
+  font-size: 3rem;
 }
