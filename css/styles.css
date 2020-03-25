@@ -106,3 +106,37 @@ p {
   color: var(--secondary);
   font-size: 3rem;
 }
+.graphics {
+  min-height: 30rem;
+  background-size: cover;
+  background-position: center center;
+}
+.graphic1 {
+  background-image: url(../img/grafico1.jpg);
+  /* Posicionar en el grid */
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+}
+.graphic2 {
+  background-image: url(../img/grafico2.jpg);
+  grid-row: 8 / 9;
+  grid-column: 1 / 3;
+}
+@media (min-width: 768px) {
+  .graphic2 {
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 6 / 7;
+    grid-column: 2 / 4;
+  }
+}
+.footer {
+  background-color: var(--backgroundDarker);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.copyright {
+  font-family: var(--font);
+  color: var(--title);
+  font-size: 2.2rem;
+  text-align: center;
+}
