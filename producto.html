@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Frontend Store - CSS Grid</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="img/logo.png" alt="Logo de frontend store" />
+    </header>
+
+    <div class="navbar">
+      <nav class="nav">
+        <a href="index.html">Tienda</a>
+        <a href="nosotros.html">Nosotros</a>
+      </nav>
+    </div>
+
+    <main class="container">
+      <h1>JavaScript</h1>
+      <div class="information-container">
+        <div class="product-image">
+          <img src="img/12.jpg" alt="imagen sobre nosotros" />
+        </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+            maiores, repudiandae repellat quisquam nostrum animi eum molestias
+            rerum earum reprehenderit distinctio ipsa voluptate aut totam saepe
+            cumque corporis odit. Eius.
+          </p>
+          <form class="sales-form">
+            <select name="talla" class="field size">
+              <option value="S">Pequeña</option>
+              <option value="M">Mediana</option>
+              <option value="L">Grande</option>
+              <option value="XL">Extra grande</option>
+            </select>
+            <input type="number" min="1" class="field quantity" />
+            <input type="submit" class="button" value="Agregar al carrito" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="copyright">
+        Frontend Store - Todos los derechos reservados 2020.
+      </p>
+    </footer>
+  </body>
+</html>
